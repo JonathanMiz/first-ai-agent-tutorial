@@ -6,10 +6,11 @@ load_dotenv()
 
 
 class Settings(BaseSettings):
-    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-    RESOURCES_FOLDER = "resources"
-    DOCUMENTS_PATH = f"{RESOURCES_FOLDER}/docs"
-    CHROMA_PATH = f"{RESOURCES_FOLDER}/chroma"
+    OPENAI_API_KEY: str
+    AIRTABLE_API_KEY: str
+    RESOURCES_PATH: str = "resources"
+    DOCUMENTS_PATH = os.path.join(RESOURCES_PATH, "docs")
+    CHROMA_PATH = os.path.join(RESOURCES_PATH, "chroma")
 
 
 settings = Settings()
