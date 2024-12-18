@@ -5,7 +5,7 @@ import chroma_db
 
 async def query(question):
     db = chroma_db.get()
-    retriever = db.as_retriever(search_type="similarity_score_threshold", search_kwargs={"score_threshold": 0.5, "k": 3})
+    retriever = db.as_retriever(search_type="similarity_score_threshold", search_kwargs={"score_threshold": 0.8, "k": 3})
     documents = retriever.invoke(question)
 
     def format_docs(docs):
