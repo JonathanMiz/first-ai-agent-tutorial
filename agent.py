@@ -35,8 +35,8 @@ agent = Agent(model="openai:gpt-4o",
 
 @agent.tool_plain
 async def get_cost_estimate(issue: str, plumbing_type: str) -> str:
-    system_prompt = read_file(f"{settings.RESOURCES_PATH}/prompts/cost_estimator_prompt.MD").format(issue=issue, plumbing_type=plumbing_type)
     """Estimate the cost of cleaning a property based on the plumbing issue and property type."""
+    system_prompt = read_file(f"{settings.RESOURCES_PATH}/prompts/cost_estimator_prompt.MD").format(issue=issue, plumbing_type=plumbing_type)
 
     cost_agent = Agent("openai:gpt-4o", system_prompt=system_prompt)
     response = await cost_agent.run(" ", model_settings={"temperature": 0.2})
