@@ -1,7 +1,7 @@
 
 # Lead Generation AI Agent
 
-This is the code for the "Build a Lead Generation AI Agent" tutorial on [YouTube](https://youtu.be/RGEJhcWdXR4).
+This is the code for the "Build a Lead Generation AI Agent" tutorial on [YouTube](https://youtu.be/eIvhkcanK_4).
 
 ## Technology Stack and Features
 
@@ -78,4 +78,4 @@ python3 main.py
 
 ### Watch the full step-by-step tutorial
 
-[![Watch the tutorial](https://img.youtube.com/vi/RGEJhcWdXR4/sddefault.jpg)](https://youtu.be/RGEJhcWdXR4)
+[![Watch the tutorial](https://img.youtube.com/vi/eIvhkcanK_4/sddefault.jpg)](https://youtu.be/eIvhkcanK_4)
